@@ -1,0 +1,886 @@
+
+============================================================
+CONTACT FORM EMAIL ATTEMPT
+Time: 2025-12-02 16:51:21
+Name: Mohamed ROMDANE
+Email: ibrahimgoumrane01@gmail.com
+Message length: 15 chars
+------------------------------------------------------------
+Configuration loaded successfully
+Host: smtp.gmail.com
+Port: 587
+Username: mizoxrizox@gmail.com
+From set: mizoxrizox@gmail.com
+To set: mizoxrizox@gmail.com
+Reply-To set: ibrahimgoumrane01@gmail.com
+Email content prepared, attempting to send...
+DEBUG: Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+DEBUG: Connection: opened
+DEBUG: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: STARTTLS
+
+DEBUG: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: CLIENT -> SERVER: Date: Tue, 2 Dec 2025 16:51:21 +0100
+
+DEBUG: CLIENT -> SERVER: To: mizoxrizox@gmail.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mizoxrizox@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Mohamed ROMDANE <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Mohamed_ROMDANE?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <LiUMnczyQ3WI8vl34tjd34RSA7OsyYxSjwKvYaQis@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_LiUMnczyQ3WI8vl34tjd34RSA7OsyYxSjwKvYaQis"
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_LiUMnczyQ3WI8vl34tjd34RSA7OsyYxSjwKvYaQis
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nouveau message de contact CEMAC Trading
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nom: Mohamed ROMDANE
+
+DEBUG: CLIENT -> SERVER: Email: ibrahimgoumrane01@gmail.com
+
+DEBUG: CLIENT -> SERVER: Message:
+
+DEBUG: CLIENT -> SERVER: Mohamed ROMDANE
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Date: 02/12/2025 à 16:51:21
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_LiUMnczyQ3WI8vl34tjd34RSA7OsyYxSjwKvYaQis
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER:             <html>
+
+DEBUG: CLIENT -> SERVER:             <head>
+
+DEBUG: CLIENT -> SERVER:                 <title>Nouveau Contact - CEMAC Trading</title>
+
+DEBUG: CLIENT -> SERVER:                 <style>
+
+DEBUG: CLIENT -> SERVER:                     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+DEBUG: CLIENT -> SERVER:                     .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+DEBUG: CLIENT -> SERVER:                     .header { background: linear-gradient(135deg, #2c5aa0, #4a90e2); color: white; padding: 20px; text-align: center; }
+
+DEBUG: CLIENT -> SERVER:                     .content { padding: 20px; background: #f8f9ff; }
+
+DEBUG: CLIENT -> SERVER:                     .info-card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+DEBUG: CLIENT -> SERVER:                     .label { font-weight: bold; color: #2c5aa0; margin-bottom: 5px; }
+
+DEBUG: CLIENT -> SERVER:                     .value { color: #333; margin-bottom: 15px; }
+
+DEBUG: CLIENT -> SERVER:                     .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 12px; }
+
+DEBUG: CLIENT -> SERVER:                 </style>
+
+DEBUG: CLIENT -> SERVER:             </head>
+
+DEBUG: CLIENT -> SERVER:             <body>
+
+DEBUG: CLIENT -> SERVER:                 <div class='container'>
+
+DEBUG: CLIENT -> SERVER:                     <div class='header'>
+
+DEBUG: CLIENT -> SERVER:                         <h1>📧 Nouveau Contact CEMAC Trading</h1>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='content'>
+
+DEBUG: CLIENT -> SERVER:                         <div class='info-card'>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>👤 Nom:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>Mohamed ROMDANE</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>📧 Email:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'><a href='mailto:ibrahimgoumrane01@gmail.com'>ibrahimgoumrane01@gmail.com</a></div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>💬 Message:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value' style='background: #f1f3f4; padding: 15px; border-radius: 5px;'>Mohamed ROMDANE</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>🕒 Date:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>02/12/2025 à 16:51:21</div>
+
+DEBUG: CLIENT -> SERVER:                         </div>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='footer'>
+
+DEBUG: CLIENT -> SERVER:                         <p><strong>CEMAC Trading - Système de Contact</strong></p>
+
+DEBUG: CLIENT -> SERVER:                         <p>Villa N°125 Avenue Prince de Galle - Akwa - Douala - Cameroun | +237 678 12 12 32</p>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                 </div>
+
+DEBUG: CLIENT -> SERVER:             </body>
+
+DEBUG: CLIENT -> SERVER:             </html>
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_LiUMnczyQ3WI8vl34tjd34RSA7OsyYxSjwKvYaQis--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 OK  1764690684 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: CLIENT -> SERVER: QUIT
+
+DEBUG: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-47929bc6a6fsm5781555e9.1 - gsmtp
+
+DEBUG: Connection: closed
+Send result: SUCCESS
+============================================================
+
+============================================================
+CONTACT FORM EMAIL ATTEMPT
+Time: 2025-12-02 16:53:39
+Name: Ibrahim Goumrane
+Email: ibrahimgoumrane01@gmail.com
+Message length: 16 chars
+------------------------------------------------------------
+Configuration loaded successfully
+Host: smtp.gmail.com
+Port: 587
+Username: mizoxrizox@gmail.com
+From set: mizoxrizox@gmail.com
+To set: mizoxrizox@gmail.com
+Reply-To set: ibrahimgoumrane01@gmail.com
+Email content prepared, attempting to send...
+DEBUG: Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+DEBUG: Connection: opened
+DEBUG: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: STARTTLS
+
+DEBUG: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: CLIENT -> SERVER: Date: Tue, 2 Dec 2025 16:53:39 +0100
+
+DEBUG: CLIENT -> SERVER: To: mizoxrizox@gmail.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mizoxrizox@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Ibrahim Goumrane <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Ibrahim_Goumrane?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <YaViRgATB9txIKATJcRaHfo81SfKmVurSr8SbbvMtw@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_YaViRgATB9txIKATJcRaHfo81SfKmVurSr8SbbvMtw"
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_YaViRgATB9txIKATJcRaHfo81SfKmVurSr8SbbvMtw
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nouveau message de contact CEMAC Trading
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nom: Ibrahim Goumrane
+
+DEBUG: CLIENT -> SERVER: Email: ibrahimgoumrane01@gmail.com
+
+DEBUG: CLIENT -> SERVER: Message:
+
+DEBUG: CLIENT -> SERVER: Ibrahim Goumrane
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Date: 02/12/2025 à 16:53:39
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_YaViRgATB9txIKATJcRaHfo81SfKmVurSr8SbbvMtw
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER:             <html>
+
+DEBUG: CLIENT -> SERVER:             <head>
+
+DEBUG: CLIENT -> SERVER:                 <title>Nouveau Contact - CEMAC Trading</title>
+
+DEBUG: CLIENT -> SERVER:                 <style>
+
+DEBUG: CLIENT -> SERVER:                     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+DEBUG: CLIENT -> SERVER:                     .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+DEBUG: CLIENT -> SERVER:                     .header { background: linear-gradient(135deg, #2c5aa0, #4a90e2); color: white; padding: 20px; text-align: center; }
+
+DEBUG: CLIENT -> SERVER:                     .content { padding: 20px; background: #f8f9ff; }
+
+DEBUG: CLIENT -> SERVER:                     .info-card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+DEBUG: CLIENT -> SERVER:                     .label { font-weight: bold; color: #2c5aa0; margin-bottom: 5px; }
+
+DEBUG: CLIENT -> SERVER:                     .value { color: #333; margin-bottom: 15px; }
+
+DEBUG: CLIENT -> SERVER:                     .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 12px; }
+
+DEBUG: CLIENT -> SERVER:                 </style>
+
+DEBUG: CLIENT -> SERVER:             </head>
+
+DEBUG: CLIENT -> SERVER:             <body>
+
+DEBUG: CLIENT -> SERVER:                 <div class='container'>
+
+DEBUG: CLIENT -> SERVER:                     <div class='header'>
+
+DEBUG: CLIENT -> SERVER:                         <h1>📧 Nouveau Contact CEMAC Trading</h1>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='content'>
+
+DEBUG: CLIENT -> SERVER:                         <div class='info-card'>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>👤 Nom:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>Ibrahim Goumrane</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>📧 Email:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'><a href='mailto:ibrahimgoumrane01@gmail.com'>ibrahimgoumrane01@gmail.com</a></div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>💬 Message:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value' style='background: #f1f3f4; padding: 15px; border-radius: 5px;'>Ibrahim Goumrane</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>🕒 Date:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>02/12/2025 à 16:53:39</div>
+
+DEBUG: CLIENT -> SERVER:                         </div>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='footer'>
+
+DEBUG: CLIENT -> SERVER:                         <p><strong>CEMAC Trading - Système de Contact</strong></p>
+
+DEBUG: CLIENT -> SERVER:                         <p>Villa N°125 Avenue Prince de Galle - Akwa - Douala - Cameroun | +237 678 12 12 32</p>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                 </div>
+
+DEBUG: CLIENT -> SERVER:             </body>
+
+DEBUG: CLIENT -> SERVER:             </html>
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_YaViRgATB9txIKATJcRaHfo81SfKmVurSr8SbbvMtw--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 OK  1764690822 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: CLIENT -> SERVER: QUIT
+
+DEBUG: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-4790addeeaasm366876265e9.7 - gsmtp
+
+DEBUG: Connection: closed
+Send result: SUCCESS
+============================================================
+
+============================================================
+CONTACT FORM EMAIL ATTEMPT
+Time: 2025-12-02 16:58:12
+Name: Mohamed ROMDANE
+Email: ibrahimgoumrane01@gmail.com
+Message length: 15 chars
+------------------------------------------------------------
+Configuration loaded successfully
+Host: smtp.gmail.com
+Port: 587
+Username: mizoxrizox@gmail.com
+From set: mizoxrizox@gmail.com
+To set: mizoxrizox@gmail.com
+Reply-To set: ibrahimgoumrane01@gmail.com
+Email content prepared, attempting to send...
+DEBUG: Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+DEBUG: Connection: opened
+DEBUG: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: STARTTLS
+
+DEBUG: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: CLIENT -> SERVER: Date: Tue, 2 Dec 2025 16:58:12 +0100
+
+DEBUG: CLIENT -> SERVER: To: mizoxrizox@gmail.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mizoxrizox@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Mohamed ROMDANE <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?iso-8859-1?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Mohamed_ROMDANE?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <RsQerQLi67ofTi4aPnLPfC03Fl3Ybl1yUqwAVxPm8@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_RsQerQLi67ofTi4aPnLPfC03Fl3Ybl1yUqwAVxPm8"
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_RsQerQLi67ofTi4aPnLPfC03Fl3Ybl1yUqwAVxPm8
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nouveau message de contact CEMAC Trading
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Nom: Mohamed ROMDANE
+
+DEBUG: CLIENT -> SERVER: Email: ibrahimgoumrane01@gmail.com
+
+DEBUG: CLIENT -> SERVER: Message:
+
+DEBUG: CLIENT -> SERVER: Mohamed ROMDANE
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Date: 02/12/2025 à 16:58:12
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_RsQerQLi67ofTi4aPnLPfC03Fl3Ybl1yUqwAVxPm8
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER:             <html>
+
+DEBUG: CLIENT -> SERVER:             <head>
+
+DEBUG: CLIENT -> SERVER:                 <title>Nouveau Contact - CEMAC Trading</title>
+
+DEBUG: CLIENT -> SERVER:                 <style>
+
+DEBUG: CLIENT -> SERVER:                     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+DEBUG: CLIENT -> SERVER:                     .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
+
+DEBUG: CLIENT -> SERVER:                     .header { background: linear-gradient(135deg, #2c5aa0, #4a90e2); color: white; padding: 20px; text-align: center; }
+
+DEBUG: CLIENT -> SERVER:                     .content { padding: 20px; background: #f8f9ff; }
+
+DEBUG: CLIENT -> SERVER:                     .info-card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+DEBUG: CLIENT -> SERVER:                     .label { font-weight: bold; color: #2c5aa0; margin-bottom: 5px; }
+
+DEBUG: CLIENT -> SERVER:                     .value { color: #333; margin-bottom: 15px; }
+
+DEBUG: CLIENT -> SERVER:                     .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 12px; }
+
+DEBUG: CLIENT -> SERVER:                 </style>
+
+DEBUG: CLIENT -> SERVER:             </head>
+
+DEBUG: CLIENT -> SERVER:             <body>
+
+DEBUG: CLIENT -> SERVER:                 <div class='container'>
+
+DEBUG: CLIENT -> SERVER:                     <div class='header'>
+
+DEBUG: CLIENT -> SERVER:                         <h1>📧 Nouveau Contact CEMAC Trading</h1>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='content'>
+
+DEBUG: CLIENT -> SERVER:                         <div class='info-card'>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>👤 Nom:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>Mohamed ROMDANE</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>📧 Email:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'><a href='mailto:ibrahimgoumrane01@gmail.com'>ibrahimgoumrane01@gmail.com</a></div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>💬 Message:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value' style='background: #f1f3f4; padding: 15px; border-radius: 5px;'>Mohamed ROMDANE</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='label'>🕒 Date:</div>
+
+DEBUG: CLIENT -> SERVER:                             <div class='value'>02/12/2025 à 16:58:12</div>
+
+DEBUG: CLIENT -> SERVER:                         </div>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                     <div class='footer'>
+
+DEBUG: CLIENT -> SERVER:                         <p><strong>CEMAC Trading - Système de Contact</strong></p>
+
+DEBUG: CLIENT -> SERVER:                         <p>Villa N°125 Avenue Prince de Galle - Akwa - Douala - Cameroun | +237 678 12 12 32</p>
+
+DEBUG: CLIENT -> SERVER:                     </div>
+
+DEBUG: CLIENT -> SERVER:                 </div>
+
+DEBUG: CLIENT -> SERVER:             </body>
+
+DEBUG: CLIENT -> SERVER:             </html>
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_RsQerQLi67ofTi4aPnLPfC03Fl3Ybl1yUqwAVxPm8--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 OK  1764691096 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: CLIENT -> SERVER: QUIT
+
+DEBUG: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-479279e1172sm17638555e9.11 - gsmtp
+
+DEBUG: Connection: closed
+Send result: SUCCESS
+============================================================
+
+============================================================
+CONTACT FORM EMAIL ATTEMPT
+Time: 2025-12-02 16:59:36
+Name: Mssp
+Email: ibrahimgoumrane01@gmail.com
+Message length: 4 chars
+------------------------------------------------------------
+Configuration loaded successfully
+Host: smtp.gmail.com
+Port: 587
+Username: mizoxrizox@gmail.com
+From set: mizoxrizox@gmail.com
+To set: mizoxrizox@gmail.com
+Reply-To set: ibrahimgoumrane01@gmail.com
+Email content prepared, attempting to send...
+DEBUG: Connection: opening to smtp.gmail.com:587, timeout=300, options=array()
+DEBUG: Connection: opened
+DEBUG: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: STARTTLS
+
+DEBUG: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+DEBUG: CLIENT -> SERVER: EHLO localhost
+
+DEBUG: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [105.159.158.93]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
+
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<mizoxrizox@gmail.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: CLIENT -> SERVER: Date: Tue, 2 Dec 2025 16:59:36 +0100
+
+DEBUG: CLIENT -> SERVER: To: mizoxrizox@gmail.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mizoxrizox@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Mssp <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?UTF-8?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Mssp?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <rdNELAW9t6g2OgrznU7j6Z3Zs2YDza3fROrZ6lDf4@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_rdNELAW9t6g2OgrznU7j6Z3Zs2YDza3fROrZ6lDf4"
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_rdNELAW9t6g2OgrznU7j6Z3Zs2YDza3fROrZ6lDf4
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Tm91dmVhdSBtZXNzYWdlIGRlIGNvbnRhY3QgQ0VNQUMgVHJhZGluZwoKTm9tOiBNc3NwCkVtYWls
+
+DEBUG: CLIENT -> SERVER: OiBpYnJhaGltZ291bXJhbmUwMUBnbWFpbC5jb20KTWVzc2FnZToKTXNzcAoKRGF0ZTogMDIvMTIv
+
+DEBUG: CLIENT -> SERVER: MjAyNSDDoCAxNjo1OTozNgo=
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_rdNELAW9t6g2OgrznU7j6Z3Zs2YDza3fROrZ6lDf4
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: DQogICAgICAgICAgICA8aHRtbD4NCiAgICAgICAgICAgIDxoZWFkPg0KICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: IDx0aXRsZT5Ob3V2ZWF1IENvbnRhY3QgLSBDRU1BQyBUcmFkaW5nPC90aXRsZT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICA8c3R5bGU+DQogICAgICAgICAgICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTog
+
+DEBUG: CLIENT -> SERVER: J1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7IGxpbmUtaGVp
+
+DEBUG: CLIENT -> SERVER: Z2h0OiAxLjY7IGNvbG9yOiAjMzMzOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250YWluZXIg
+
+DEBUG: CLIENT -> SERVER: eyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgYmFja2dyb3VuZDogI2ZmZmZmZjsg
+
+DEBUG: CLIENT -> SERVER: fQ0KICAgICAgICAgICAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogbGluZWFyLWdyYWRp
+
+DEBUG: CLIENT -> SERVER: ZW50KDEzNWRlZywgIzJjNWFhMCwgIzRhOTBlMik7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMjBw
+
+DEBUG: CLIENT -> SERVER: eDsgdGV4dC1hbGlnbjogY2VudGVyOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250ZW50IHsg
+
+DEBUG: CLIENT -> SERVER: cGFkZGluZzogMjBweDsgYmFja2dyb3VuZDogI2Y4ZjlmZjsgfQ0KICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAuaW5mby1jYXJkIHsgYmFja2dyb3VuZDogd2hpdGU7IGJvcmRlci1yYWRpdXM6IDhweDsgcGFk
+
+DEBUG: CLIENT -> SERVER: ZGluZzogMjBweDsgbWFyZ2luOiAxNXB4IDA7IGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAs
+
+DEBUG: CLIENT -> SERVER: MCwwLDAuMSk7IH0NCiAgICAgICAgICAgICAgICAgICAgLmxhYmVsIHsgZm9udC13ZWlnaHQ6IGJv
+
+DEBUG: CLIENT -> SERVER: bGQ7IGNvbG9yOiAjMmM1YWEwOyBtYXJnaW4tYm90dG9tOiA1cHg7IH0NCiAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgLnZhbHVlIHsgY29sb3I6ICMzMzM7IG1hcmdpbi1ib3R0b206IDE1cHg7IH0NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgLmZvb3RlciB7IGJhY2tncm91bmQ6ICMyYzNlNTA7IGNvbG9yOiB3aGl0
+
+DEBUG: CLIENT -> SERVER: ZTsgcGFkZGluZzogMjBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDEycHg7IH0N
+
+DEBUG: CLIENT -> SERVER: CiAgICAgICAgICAgICAgICA8L3N0eWxlPg0KICAgICAgICAgICAgPC9oZWFkPg0KICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgPGJvZHk+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0nY29udGFpbmVyJz4NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naGVhZGVyJz4NCiAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgIDxoMT7wn5OnIE5vdXZlYXUgQ29udGFjdCBDRU1BQyBUcmFkaW5nPC9oMT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9J2NvbnRl
+
+DEBUG: CLIENT -> SERVER: bnQnPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naW5mby1jYXJkJz4NCiAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdsYWJlbCc+8J+RpCBOb206PC9k
+
+DEBUG: CLIENT -> SERVER: aXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnPk1zc3A8
+
+DEBUG: CLIENT -> SERVER: L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdsYWJlbCc+8J+T
+
+DEBUG: CLIENT -> SERVER: pyBFbWFpbDo8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSd2
+
+DEBUG: CLIENT -> SERVER: YWx1ZSc+PGEgaHJlZj0nbWFpbHRvOmlicmFoaW1nb3VtcmFuZTAxQGdtYWlsLmNvbSc+aWJyYWhp
+
+DEBUG: CLIENT -> SERVER: bWdvdW1yYW5lMDFAZ21haWwuY29tPC9hPjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgIDxkaXYgY2xhc3M9J2xhYmVsJz7wn5KsIE1lc3NhZ2U6PC9kaXY+DQogICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnIHN0eWxlPSdiYWNrZ3JvdW5kOiAjZjFm
+
+DEBUG: CLIENT -> SERVER: M2Y0OyBwYWRkaW5nOiAxNXB4OyBib3JkZXItcmFkaXVzOiA1cHg7Jz5Nc3NwPC9kaXY+DQogICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0nbGFiZWwnPvCflZIgRGF0ZTo8L2Rp
+
+DEBUG: CLIENT -> SERVER: dj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSd2YWx1ZSc+MDIvMTIv
+
+DEBUG: CLIENT -> SERVER: MjAyNSDDoCAxNjo1OTozNjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQog
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNz
+
+DEBUG: CLIENT -> SERVER: PSdmb290ZXInPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHA+PHN0cm9uZz5DRU1BQyBUcmFk
+
+DEBUG: CLIENT -> SERVER: aW5nIC0gU3lzdMOobWUgZGUgQ29udGFjdDwvc3Ryb25nPjwvcD4NCiAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgIDxwPlZpbGxhIE7CsDEyNSBBdmVudWUgUHJpbmNlIGRlIEdhbGxlIC0gQWt3YSAtIERv
+
+DEBUG: CLIENT -> SERVER: dWFsYSAtIENhbWVyb3VuIHwgKzIzNyA2NzggMTIgMTIgMzI8L3A+DQogICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9ib2R5Pg0K
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgPC9odG1sPg==
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_rdNELAW9t6g2OgrznU7j6Z3Zs2YDza3fROrZ6lDf4--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 OK  1764691180 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: CLIENT -> SERVER: QUIT
+
+DEBUG: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-4792a5bc2f1sm113595e9.5 - gsmtp
+
+DEBUG: Connection: closed
+Send result: SUCCESS
+============================================================

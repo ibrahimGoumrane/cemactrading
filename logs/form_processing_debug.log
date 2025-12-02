@@ -1,0 +1,78 @@
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-02 16:51:21
+POST data received: Array
+(
+    [name] => Mohamed ROMDANE
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Mohamed ROMDANE
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Mohamed ROMDANE'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Mohamed ROMDANE'
+Validation passed, attempting to send email...
+Email send result: SUCCESS
+Returning SUCCESS response
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-02 16:53:39
+POST data received: Array
+(
+    [name] => Ibrahim Goumrane
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Ibrahim Goumrane
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Ibrahim Goumrane'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Ibrahim Goumrane'
+Validation passed, attempting to send email...
+Email send result: SUCCESS
+Returning SUCCESS response
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-02 16:58:12
+POST data received: Array
+(
+    [name] => Mohamed ROMDANE
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Mohamed ROMDANE
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Mohamed ROMDANE'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Mohamed ROMDANE'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-02 16:59:36
+POST data received: Array
+(
+    [name] => Mssp
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Mssp
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Mssp'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Mssp'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
