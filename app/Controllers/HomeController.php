@@ -22,65 +22,65 @@ class HomeController
     }
     
     /**
-     * Load product data
+     * Load product data with translations
      */
     private function loadProducts()
     {
         $this->products = [
             [
-                'name' => "Graines d'Akpi",
-                'description' => 'Produit naturel collecté des forêts surtout de l\'Est du Cameroun.',
-                'season' => '-',
-                'packaging' => 'Sac PP de 25 kg, prêt à l\'export.',
-                'price' => '5750 FCFA/sac',
+                'name' => __('product_akpi_name'),
+                'description' => __('product_akpi_desc'),
+                'season' => __('product_akpi_season'),
+                'packaging' => __('product_akpi_packaging'),
+                'price' => __('product_akpi_price'),
                 'image' => 'akpi.jpeg'
             ],
             [
-                'name' => 'Curcuma en gousse',
-                'description' => 'Produit cultivé dans les environs du Mont Cameroun.',
-                'season' => 'Décembre à février',
-                'packaging' => '-',
-                'price' => '-',
+                'name' => __('product_curcuma_name'),
+                'description' => __('product_curcuma_desc'),
+                'season' => __('product_curcuma_season'),
+                'packaging' => __('product_curcuma_packaging'),
+                'price' => __('product_curcuma_price'),
                 'image' => 'curcuma.jpeg'
             ],
             [
-                'name' => 'Ail naturel',
-                'description' => 'Produit cultivé à l\'Ouest du Cameroun.',
-                'season' => 'À partir de mars',
-                'packaging' => 'Filets de 10, 20 ou 25 kg',
-                'price' => '1000 à 1300 FCFA/kg selon le calibre',
+                'name' => __('product_garlic_name'),
+                'description' => __('product_garlic_desc'),
+                'season' => __('product_garlic_season'),
+                'packaging' => __('product_garlic_packaging'),
+                'price' => __('product_garlic_price'),
                 'image' => 'ail.jpeg'
             ],
             [
-                'name' => 'Café Arabica',
-                'description' => 'Origine : Extrême Nord du Cameroun et Tchad.',
-                'season' => 'Décembre et janvier',
-                'packaging' => 'Sac de 100 kg',
-                'price' => '-',
+                'name' => __('product_arabica_name'),
+                'description' => __('product_arabica_desc'),
+                'season' => __('product_arabica_season'),
+                'packaging' => __('product_arabica_packaging'),
+                'price' => __('product_arabica_price'),
                 'image' => 'gomme-arabica.jpeg'
             ],
             [
-                'name' => 'Fruit 4 côtés',
-                'description' => 'Fruit naturel collecté des arbres à l\'Est et un peu au Sud du Cameroun.',
-                'season' => 'Décembre et janvier',
-                'packaging' => '-',
-                'price' => '-',
+                'name' => __('product_fruit4sides_name'),
+                'description' => __('product_fruit4sides_desc'),
+                'season' => __('product_fruit4sides_season'),
+                'packaging' => __('product_fruit4sides_packaging'),
+                'price' => __('product_fruit4sides_price'),
                 'image' => 'fruit4cotes.jpeg'
             ],
             [
-                'name' => 'Grains de Sésame blanc',
-                'description' => 'Produit naturel cultivé des champs à l\'Extrême Nord du Cameroun et du Tchad.',
-                'season' => 'Décembre et janvier',
-                'packaging' => 'Traité avec Sortex',
-                'price' => '1200 à 1400 FCFA/kg selon la quantité',
+                'name' => __('product_sesame_name'),
+                'description' => __('product_sesame_desc'),
+                'season' => __('product_sesame_season'),
+                'packaging' => __('product_sesame_packaging'),
+                'price' => __('product_sesame_price'),
                 'image' => 'sesame.jpeg'
             ],
             [
-                'name' => 'Gingembre frais et sec',
-                'description' => 'Produit frais ou sec, collecté en janvier et février.',
-                'season' => 'Janvier et février',
-                'packaging' => '-',
-                'price' => 'Frais : 800 à 1000 FCFA/kg selon calibre<br>Sec : 1300 à 1600 FCFA/kg selon la quantité',
+                'name' => __('product_ginger_name'),
+                'description' => __('product_ginger_desc'),
+                'season' => __('product_ginger_season'),
+                'packaging' => __('product_ginger_packaging'),
+                'price' => __('product_ginger_price'),
                 'image' => 'gingembre-frais.jpeg'
             ]
         ];

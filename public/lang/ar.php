@@ -32,6 +32,7 @@ return [
     
     // Products page
     'products_title' => 'منتجات التصدير من الكاميرون',
+    'products_intro' => 'اكتشف مجموعتنا من منتجات التصدير من الكاميرون، المختارة بعناية لجودتها الاستثنائية.',
     'product_name' => 'المنتج',
     'product_description' => 'الوصف',
     'product_season' => 'الموسم',
@@ -59,6 +60,51 @@ return [
     'phone' => 'الهاتف',
     'email' => 'البريد الإلكتروني',
     'copyright' => '© 2024 محمد رمضان',
+    
+    // Product translations
+    'product_akpi_name' => 'بذور الأكبي',
+    'product_akpi_desc' => 'منتج طبيعي يتم جمعه من الغابات، خاصة من شرق الكاميرون.',
+    'product_akpi_season' => '-',
+    'product_akpi_packaging' => 'كيس بولي بروبلين 25 كجم، جاهز للتصدير.',
+    'product_akpi_price' => '5750 فرنك أفريقي/كيس',
+    
+    'product_curcuma_name' => 'كركم في قرون',
+    'product_curcuma_desc' => 'منتج مزروع في محيط جبل الكاميرون.',
+    'product_curcuma_season' => 'ديسمبر إلى فبراير',
+    'product_curcuma_packaging' => '-',
+    'product_curcuma_price' => '-',
+    
+    'product_garlic_name' => 'ثوم طبيعي',
+    'product_garlic_desc' => 'منتج مزروع في غرب الكاميرون.',
+    'product_garlic_season' => 'من مارس فصاعداً',
+    'product_garlic_packaging' => 'شباك 10، 20 أو 25 كجم',
+    'product_garlic_price' => '1000 إلى 1300 فرنك أفريقي/كجم حسب الحجم',
+    
+    'product_arabica_name' => 'قهوة أرابيكا',
+    'product_arabica_desc' => 'المنشأ: أقصى شمال الكاميرون وتشاد.',
+    'product_arabica_season' => 'ديسمبر ويناير',
+    'product_arabica_packaging' => 'كيس 100 كجم',
+    'product_arabica_price' => '-',
+    
+    'product_fruit4sides_name' => 'فاكهة 4 جوانب',
+    'product_fruit4sides_desc' => 'فاكهة طبيعية تجمع من الأشجار في شرق وجنوب الكاميرون.',
+    'product_fruit4sides_season' => 'ديسمبر ويناير',
+    'product_fruit4sides_packaging' => '-',
+    'product_fruit4sides_price' => '-',
+    
+    'product_sesame_name' => 'حبوب السمسم الأبيض',
+    'product_sesame_desc' => 'منتج طبيعي مزروع في حقول أقصى شمال الكاميرون وتشاد.',
+    'product_sesame_season' => 'ديسمبر ويناير',
+    'product_sesame_packaging' => 'معالج بـ Sortex',
+    'product_sesame_price' => '1200 إلى 1400 فرنك أفريقي/كجم حسب الكمية',
+    
+    'product_ginger_name' => 'زنجبيل طازج ومجفف',
+    'product_ginger_desc' => 'منتج طازج أو مجفف، يجمع في يناير وفبراير.',
+    'product_ginger_season' => 'يناير وفبراير',
+    'product_ginger_packaging' => '-',
+    'product_ginger_price' => 'طازج: 800 إلى 1000 فرنك أفريقي/كجم حسب الحجم<br>مجفف: 1300 إلى 1600 فرنك أفريقي/كجم حسب الكمية',
+    
+    'contact_us' => 'اتصل بنا',
     
     // SEO
     'meta_description' => 'سيماك للتجارة - متخصصون في الاستيراد والتصدير في دوالا، الكاميرون. منتجات غذائية عالية الجودة، إدارة سلسلة التوريد، ومساعدة جمركية.',

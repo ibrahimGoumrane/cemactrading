@@ -32,6 +32,7 @@ return [
     
     // Products page
     'products_title' => 'Productos de Exportación de Camerún',
+    'products_intro' => 'Descubre nuestra gama de productos de exportación de Camerún, cuidadosamente seleccionados por su calidad excepcional.',
     'product_name' => 'Producto',
     'product_description' => 'Descripción',
     'product_season' => 'Temporada',
@@ -59,6 +60,51 @@ return [
     'phone' => 'Teléfono',
     'email' => 'Email',
     'copyright' => '© 2024 Mohamed ROMDANE',
+    
+    // Product translations
+    'product_akpi_name' => 'Semillas de Akpi',
+    'product_akpi_desc' => 'Producto natural recolectado de bosques, principalmente del este de Camerún.',
+    'product_akpi_season' => '-',
+    'product_akpi_packaging' => 'Saco PP de 25 kg, listo para exportación.',
+    'product_akpi_price' => '5750 FCFA/saco',
+    
+    'product_curcuma_name' => 'Cúrcuma en Vaina',
+    'product_curcuma_desc' => 'Producto cultivado en los alrededores del Monte Camerún.',
+    'product_curcuma_season' => 'Diciembre a febrero',
+    'product_curcuma_packaging' => '-',
+    'product_curcuma_price' => '-',
+    
+    'product_garlic_name' => 'Ajo Natural',
+    'product_garlic_desc' => 'Producto cultivado en el oeste de Camerún.',
+    'product_garlic_season' => 'A partir de marzo',
+    'product_garlic_packaging' => 'Redes de 10, 20 o 25 kg',
+    'product_garlic_price' => '1000 a 1300 FCFA/kg según el calibre',
+    
+    'product_arabica_name' => 'Café Arábica',
+    'product_arabica_desc' => 'Origen: Extremo Norte de Camerún y Chad.',
+    'product_arabica_season' => 'Diciembre y enero',
+    'product_arabica_packaging' => 'Saco de 100 kg',
+    'product_arabica_price' => '-',
+    
+    'product_fruit4sides_name' => 'Fruta de 4 Lados',
+    'product_fruit4sides_desc' => 'Fruta natural recolectada de árboles en el este y sur de Camerún.',
+    'product_fruit4sides_season' => 'Diciembre y enero',
+    'product_fruit4sides_packaging' => '-',
+    'product_fruit4sides_price' => '-',
+    
+    'product_sesame_name' => 'Semillas de Sésamo Blanco',
+    'product_sesame_desc' => 'Producto natural cultivado en campos del extremo norte de Camerún y Chad.',
+    'product_sesame_season' => 'Diciembre y enero',
+    'product_sesame_packaging' => 'Tratado con Sortex',
+    'product_sesame_price' => '1200 a 1400 FCFA/kg según la cantidad',
+    
+    'product_ginger_name' => 'Jengibre Fresco y Seco',
+    'product_ginger_desc' => 'Producto fresco o seco, recolectado en enero y febrero.',
+    'product_ginger_season' => 'Enero y febrero',
+    'product_ginger_packaging' => '-',
+    'product_ginger_price' => 'Fresco: 800 a 1000 FCFA/kg según calibre<br>Seco: 1300 a 1600 FCFA/kg según la cantidad',
+    
+    'contact_us' => 'Contáctanos',
     
     // SEO
     'meta_description' => 'CEMAC Trading - Especialistas en Importación y Exportación en Duala, Camerún. Productos alimenticios de alta calidad, gestión de cadena de suministro y asistencia aduanera.',

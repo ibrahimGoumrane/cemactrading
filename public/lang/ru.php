@@ -31,7 +31,8 @@ return [
     'why_location' => 'Стратегическое расположение в Дуале, экономическом центре Камеруна.',
     
     // Products page
-    'products_title' => 'Экспортные Продукты из Камеруна',
+    'products_title' => 'Экспортные товары из Камеруна',
+    'products_intro' => 'Откройте для себя нашу линейку экспортных товаров из Камеруна, тщательно отобранных за их исключительное качество.',
     'product_name' => 'Продукт',
     'product_description' => 'Описание',
     'product_season' => 'Сезон',
@@ -60,7 +61,52 @@ return [
     'email' => 'Email',
     'copyright' => '© 2024 Мохамед РОМДАНЕ',
     
+    // Product translations
+    'product_akpi_name' => 'Семена Акпи',
+    'product_akpi_desc' => 'Натуральный продукт, собираемый из лесов, в основном с востока Камеруна.',
+    'product_akpi_season' => '-',
+    'product_akpi_packaging' => 'ПП мешок 25 кг, готовый к экспорту.',
+    'product_akpi_price' => '5750 франков КФА/мешок',
+    
+    'product_curcuma_name' => 'Куркума в стручках',
+    'product_curcuma_desc' => 'Продукт, выращиваемый в окрестностях горы Камерун.',
+    'product_curcuma_season' => 'Декабрь-февраль',
+    'product_curcuma_packaging' => '-',
+    'product_curcuma_price' => '-',
+    
+    'product_garlic_name' => 'Натуральный чеснок',
+    'product_garlic_desc' => 'Продукт, выращиваемый в западном Камеруне.',
+    'product_garlic_season' => 'С марта',
+    'product_garlic_packaging' => 'Сетки 10, 20 или 25 кг',
+    'product_garlic_price' => '1000-1300 франков КФА/кг в зависимости от размера',
+    
+    'product_arabica_name' => 'Кофе Арабика',
+    'product_arabica_desc' => 'Происхождение: Крайний север Камеруна и Чад.',
+    'product_arabica_season' => 'Декабрь и январь',
+    'product_arabica_packaging' => 'Мешок 100 кг',
+    'product_arabica_price' => '-',
+    
+    'product_fruit4sides_name' => 'Плод 4-х сторон',
+    'product_fruit4sides_desc' => 'Натуральный плод, собираемый с деревьев на востоке и юге Камеруна.',
+    'product_fruit4sides_season' => 'Декабрь и январь',
+    'product_fruit4sides_packaging' => '-',
+    'product_fruit4sides_price' => '-',
+    
+    'product_sesame_name' => 'Семена белого кунжута',
+    'product_sesame_desc' => 'Натуральный продукт, выращиваемый на полях крайнего севера Камеруна и Чада.',
+    'product_sesame_season' => 'Декабрь и январь',
+    'product_sesame_packaging' => 'Обработано с помощью Sortex',
+    'product_sesame_price' => '1200-1400 франков КФА/кг в зависимости от количества',
+    
+    'product_ginger_name' => 'Имбирь свежий и сухой',
+    'product_ginger_desc' => 'Свежий или сухой продукт, собираемый в январе и феврале.',
+    'product_ginger_season' => 'Январь и февраль',
+    'product_ginger_packaging' => '-',
+    'product_ginger_price' => 'Свежий: 800-1000 франков КФА/кг в зависимости от размера<br>Сухой: 1300-1600 франков КФА/кг в зависимости от количества',
+    
+    'contact_us' => 'Связаться с нами',
+    
     // SEO
-    'meta_description' => 'CEMAC Trading - Специалисты по Импорту и Экспорту в Дуале, Камерун. Высококачественные продукты питания, управление цепочкой поставок и таможенная помощь.',
-    'meta_keywords' => 'CEMAC Trading, импорт, экспорт, продукты питания, Дуала, Камерун, цепочка поставок, таможня, сельское хозяйство'
+    'meta_description' => 'CEMAC Trading - Специалисты по импорту и экспорту в Дуале, Камерун. Высококачественные пищевые продукты, управление цепочкой поставок и таможенная помощь.',
+    'meta_keywords' => 'CEMAC Trading, импорт, экспорт, пищевые продукты, Дуала, Камерун, цепочка поставок, таможня, сельское хозяйство'
 ];

@@ -31,14 +31,24 @@
 
 <!-- Hero Section -->
 <section class="hero" id="home">
-    <div class="hero-background"></div>
     <div class="container">
         <div class="hero-content">
-            <div class="hero-logo">
-                <img src="<?= asset('images/cemactrading-logo.jpg') ?>" alt="<?= Config::APP_NAME ?>" class="hero-logo-img">
+            <div class="hero-main">
+                <div class="hero-text">
+                    <div class="hero-logo">
+                        <img src="<?= asset('images/cemactrading-logo.jpg') ?>" alt="<?= Config::APP_NAME ?>" class="hero-logo-img">
+                    </div>
+                    <h1 class="hero-title"><?= __('home_title') ?></h1>
+                    <p class="hero-description"><?= __('home_welcome') ?></p>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-decorative">
+                        <div class="floating-element element-1"><i class="fas fa-ship"></i></div>
+                        <div class="floating-element element-2"><i class="fas fa-plane"></i></div>
+                        <div class="floating-element element-3"><i class="fas fa-truck"></i></div>
+                    </div>
+                </div>
             </div>
-            <h1 class="hero-title"><?= __('home_title') ?></h1>
-            <p class="hero-description"><?= __('home_welcome') ?></p>
             <div class="hero-buttons">
                 <a href="#products" class="btn btn-primary smooth-scroll">
                     <i class="fas fa-file-alt"></i> <?= __('nav_quotation') ?>
@@ -113,7 +123,7 @@
     <div class="container">
         <div class="products-intro">
             <h2><?= __('products_title') ?></h2>
-            <p>Découvrez notre gamme de produits d'exportation du Cameroun, soigneusement sélectionnés pour leur qualité exceptionnelle.</p>
+            <p><?= __('products_intro') ?></p>
         </div>
         
         <div class="products-table-container">
@@ -154,7 +164,7 @@
                                 <?php if ($product['price'] !== '-'): ?>
                                     <span class="price"><?= $product['price'] ?></span>
                                 <?php else: ?>
-                                    <span class="price-contact">Nous contacter</span>
+                                    <span class="price-contact"><?= __('contact_us') ?></span>
                                 <?php endif; ?>
                             </td>
                         </tr>
@@ -188,7 +198,7 @@
                                 <?php if ($product['price'] !== '-'): ?>
                                     <span class="price"><?= $product['price'] ?></span>
                                 <?php else: ?>
-                                    <span class="price-contact">Nous contacter</span>
+                                    <span class="price-contact"><?= __('contact_us') ?></span>
                                 <?php endif; ?>
                             </div>
                         </div>
