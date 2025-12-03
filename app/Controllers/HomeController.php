@@ -268,7 +268,8 @@ class HomeController
             $mail->SMTPAuth   = true;
             $mail->Username   = Config::SMTP_USERNAME;
             $mail->Password   = Config::SMTP_PASSWORD;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->SMTPSecure = false;         // Disable explicit TLS
+            $mail->SMTPAutoTLS = false;        // Disable automatic TLS attempt
             $mail->Port       = Config::SMTP_PORT;
 
             // Enable verbose debug output and capture it
@@ -382,7 +383,8 @@ class HomeController
             $mail->SMTPAuth   = true;
             $mail->Username   = Config::SMTP_USERNAME;
             $mail->Password   = Config::SMTP_PASSWORD;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->SMTPSecure = false;         // Disable explicit TLS
+            $mail->SMTPAutoTLS = false;        // Disable automatic TLS attempt
             $mail->Port       = Config::SMTP_PORT;
 
             // Recipients for confirmation

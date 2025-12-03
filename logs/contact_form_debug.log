@@ -1,7 +1,7 @@
 
 ============================================================
 CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 17:51:52
+Time: 2025-12-03 20:47:36
 Name: Ibrahim Goumrane
 Email: ibrahimgoumrane01@gmail.com
 Message length: 16 chars
@@ -15,86 +15,6 @@ To set: contact@cemactrading.com
 Reply-To set: ibrahimgoumrane01@gmail.com
 Email content prepared, attempting to send...
 DEBUG: Connection: opening to mail.formafast.com:25, timeout=300, options=array()
-DEBUG: Connection: opened
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT (NATIVE mail())
-Time: 2025-12-03 17:56:49
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Email prepared for: contact@cemactrading.com
-From: mail@formafast.com
-Reply-To: ibrahimgoumrane01@gmail.com
-Attempting to send with native mail()...
-Send result: FAILED
-============================================================
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT (NATIVE mail())
-Time: 2025-12-03 17:58:23
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Email prepared for: contact@cemactrading.com
-From: mail@formafast.com
-Reply-To: ibrahimgoumrane01@gmail.com
-Attempting to send with native mail()...
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 18:02:14
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Configuration loaded successfully
-Host: mail.formafast.com
-Port: 25
-Username: mail@formafast.com
-From set: mail@formafast.com
-To set: contact@cemactrading.com
-Reply-To set: ibrahimgoumrane01@gmail.com
-Email content prepared, attempting to send...
-DEBUG: Connection: opening to mail.formafast.com:25, timeout=300, options=array()
-DEBUG: Connection: opened
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 18:15:55
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Configuration loaded successfully
-Host: mail.formafast.com
-Port: 25
-Username: mail@formafast.com
-From set: mail@formafast.com
-To set: contact@cemactrading.com
-Reply-To set: ibrahimgoumrane01@gmail.com
-Email content prepared, attempting to send...
-DEBUG: Connection: opening to mail.formafast.com:25, timeout=300, options=array()
-DEBUG: Connection: opened
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 18:18:17
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Configuration loaded successfully
-Host: mail.formafast.com
-Port: 587
-Username: mail@formafast.com
-From set: mail@formafast.com
-To set: contact@cemactrading.com
-Reply-To set: ibrahimgoumrane01@gmail.com
-Email content prepared, attempting to send...
-DEBUG: Connection: opening to mail.formafast.com:587, timeout=300, options=array()
 DEBUG: Connection: opened
 DEBUG: SERVER -> CLIENT: 220 mail.formafast.com ESMTP Postfix
 
@@ -105,57 +25,199 @@ DEBUG: SERVER -> CLIENT: 250-mail.formafast.com
 250-SIZE 10240000
 250-VRFY
 250-ETRN
-250-STARTTLS
+250-AUTH PLAIN LOGIN
 250-ENHANCEDSTATUSCODES
 250-8BITMIME
 250 DSN
 
-DEBUG: CLIENT -> SERVER: STARTTLS
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
 
-DEBUG: SERVER -> CLIENT: 454 4.7.0 TLS not available due to local problem
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
 
-DEBUG: SMTP ERROR: STARTTLS command failed: 454 4.7.0 TLS not available due to local problem
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
 
-DEBUG: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Authentication successful
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mail@formafast.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 Ok
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<contact@cemactrading.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 Ok
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>
+
+DEBUG: CLIENT -> SERVER: Date: Wed, 3 Dec 2025 20:47:36 +0100
+
+DEBUG: CLIENT -> SERVER: To: contact@cemactrading.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mail@formafast.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Ibrahim Goumrane <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?UTF-8?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Ibrahim_Goumrane?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <e9O3jr7YxQqxUypKiXbA64by2c1c8tkqgD1ql3SSw@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_e9O3jr7YxQqxUypKiXbA64by2c1c8tkqgD1ql3SSw"
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_e9O3jr7YxQqxUypKiXbA64by2c1c8tkqgD1ql3SSw
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Tm91dmVhdSBtZXNzYWdlIGRlIGNvbnRhY3QgQ0VNQUMgVHJhZGluZwoKTm9tOiBJYnJhaGltIEdv
+
+DEBUG: CLIENT -> SERVER: dW1yYW5lCkVtYWlsOiBpYnJhaGltZ291bXJhbmUwMUBnbWFpbC5jb20KTWVzc2FnZToKSWJyYWhp
+
+DEBUG: CLIENT -> SERVER: bSBHb3VtcmFuZQoKRGF0ZTogMDMvMTIvMjAyNSDDoCAyMDo0NzozNgo=
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_e9O3jr7YxQqxUypKiXbA64by2c1c8tkqgD1ql3SSw
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: DQogICAgICAgICAgICA8aHRtbD4NCiAgICAgICAgICAgIDxoZWFkPg0KICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: IDx0aXRsZT5Ob3V2ZWF1IENvbnRhY3QgLSBDRU1BQyBUcmFkaW5nPC90aXRsZT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICA8c3R5bGU+DQogICAgICAgICAgICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTog
+
+DEBUG: CLIENT -> SERVER: J1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7IGxpbmUtaGVp
+
+DEBUG: CLIENT -> SERVER: Z2h0OiAxLjY7IGNvbG9yOiAjMzMzOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250YWluZXIg
+
+DEBUG: CLIENT -> SERVER: eyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgYmFja2dyb3VuZDogI2ZmZmZmZjsg
+
+DEBUG: CLIENT -> SERVER: fQ0KICAgICAgICAgICAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogbGluZWFyLWdyYWRp
+
+DEBUG: CLIENT -> SERVER: ZW50KDEzNWRlZywgIzJjNWFhMCwgIzRhOTBlMik7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMjBw
+
+DEBUG: CLIENT -> SERVER: eDsgdGV4dC1hbGlnbjogY2VudGVyOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250ZW50IHsg
+
+DEBUG: CLIENT -> SERVER: cGFkZGluZzogMjBweDsgYmFja2dyb3VuZDogI2Y4ZjlmZjsgfQ0KICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAuaW5mby1jYXJkIHsgYmFja2dyb3VuZDogd2hpdGU7IGJvcmRlci1yYWRpdXM6IDhweDsgcGFk
+
+DEBUG: CLIENT -> SERVER: ZGluZzogMjBweDsgbWFyZ2luOiAxNXB4IDA7IGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAs
+
+DEBUG: CLIENT -> SERVER: MCwwLDAuMSk7IH0NCiAgICAgICAgICAgICAgICAgICAgLmxhYmVsIHsgZm9udC13ZWlnaHQ6IGJv
+
+DEBUG: CLIENT -> SERVER: bGQ7IGNvbG9yOiAjMmM1YWEwOyBtYXJnaW4tYm90dG9tOiA1cHg7IH0NCiAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgLnZhbHVlIHsgY29sb3I6ICMzMzM7IG1hcmdpbi1ib3R0b206IDE1cHg7IH0NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgLmZvb3RlciB7IGJhY2tncm91bmQ6ICMyYzNlNTA7IGNvbG9yOiB3aGl0
+
+DEBUG: CLIENT -> SERVER: ZTsgcGFkZGluZzogMjBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDEycHg7IH0N
+
+DEBUG: CLIENT -> SERVER: CiAgICAgICAgICAgICAgICA8L3N0eWxlPg0KICAgICAgICAgICAgPC9oZWFkPg0KICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgPGJvZHk+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0nY29udGFpbmVyJz4NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naGVhZGVyJz4NCiAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgIDxoMT7wn5OnIE5vdXZlYXUgQ29udGFjdCBDRU1BQyBUcmFkaW5nPC9oMT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9J2NvbnRl
+
+DEBUG: CLIENT -> SERVER: bnQnPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naW5mby1jYXJkJz4NCiAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdsYWJlbCc+8J+RpCBOb206PC9k
+
+DEBUG: CLIENT -> SERVER: aXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnPklicmFo
+
+DEBUG: CLIENT -> SERVER: aW0gR291bXJhbmU8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNz
+
+DEBUG: CLIENT -> SERVER: PSdsYWJlbCc+8J+TpyBFbWFpbDo8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+
+DEBUG: CLIENT -> SERVER: ZGl2IGNsYXNzPSd2YWx1ZSc+PGEgaHJlZj0nbWFpbHRvOmlicmFoaW1nb3VtcmFuZTAxQGdtYWls
+
+DEBUG: CLIENT -> SERVER: LmNvbSc+aWJyYWhpbWdvdW1yYW5lMDFAZ21haWwuY29tPC9hPjwvZGl2Pg0KICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9J2xhYmVsJz7wn5KsIE1lc3NhZ2U6PC9kaXY+DQog
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnIHN0eWxlPSdiYWNr
+
+DEBUG: CLIENT -> SERVER: Z3JvdW5kOiAjZjFmM2Y0OyBwYWRkaW5nOiAxNXB4OyBib3JkZXItcmFkaXVzOiA1cHg7Jz5JYnJh
+
+DEBUG: CLIENT -> SERVER: aGltIEdvdW1yYW5lPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFz
+
+DEBUG: CLIENT -> SERVER: cz0nbGFiZWwnPvCflZIgRGF0ZTo8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+
+DEBUG: CLIENT -> SERVER: ZGl2IGNsYXNzPSd2YWx1ZSc+MDMvMTIvMjAyNSDDoCAyMDo0NzozNjwvZGl2Pg0KICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdmb290ZXInPg0KICAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgPHA+PHN0cm9uZz5DRU1BQyBUcmFkaW5nIC0gU3lzdMOobWUgZGUgQ29udGFjdDwvc3Ryb25n
+
+DEBUG: CLIENT -> SERVER: PjwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwPlZpbGxhIE7CsDEyNSBBdmVudWUgUHJp
+
+DEBUG: CLIENT -> SERVER: bmNlIGRlIEdhbGxlIC0gQWt3YSAtIERvdWFsYSAtIENhbWVyb3VuIHwgKzIzNyA2NzggMTIgMTIg
+
+DEBUG: CLIENT -> SERVER: MzI8L3A+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2
+
+DEBUG: CLIENT -> SERVER: Pg0KICAgICAgICAgICAgPC9ib2R5Pg0KICAgICAgICAgICAgPC9odG1sPg==
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_e9O3jr7YxQqxUypKiXbA64by2c1c8tkqgD1ql3SSw--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 Ok: queued as A747A10D1B1
 
 DEBUG: CLIENT -> SERVER: QUIT
 
 DEBUG: SERVER -> CLIENT: 221 2.0.0 Bye
 
 DEBUG: Connection: closed
-DEBUG: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
-
-EXCEPTION: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
-
-File: C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php
-Line: 2252
-Stack trace:
-#0 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(2062): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1689): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 3 De...', '--b1=_Fmz4I1b7Z...')
-#2 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1523): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(351): PHPMailer\PHPMailer\PHPMailer->send()
-#4 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(204): HomeController->sendEmailSMTP('Ibrahim Goumran...', 'ibrahimgoumrane...', 'Ibrahim Goumran...')
-#5 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(151): HomeController->processContactForm()
-#6 C:\xampp\htdocs\cemactrading\index.php(82): HomeController->apiContact()
-#7 {main}
+Send result: SUCCESS
 ============================================================
 
 ============================================================
 CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 18:18:23
+Time: 2025-12-03 20:53:07
 Name: Ibrahim Goumrane
 Email: ibrahimgoumrane01@gmail.com
 Message length: 16 chars
 ------------------------------------------------------------
 Configuration loaded successfully
 Host: mail.formafast.com
-Port: 587
+Port: 25
 Username: mail@formafast.com
 From set: mail@formafast.com
 To set: contact@cemactrading.com
 Reply-To set: ibrahimgoumrane01@gmail.com
 Email content prepared, attempting to send...
-DEBUG: Connection: opening to mail.formafast.com:587, timeout=300, options=array()
+DEBUG: Connection: opening to mail.formafast.com:25, timeout=300, options=array()
 DEBUG: Connection: opened
 DEBUG: SERVER -> CLIENT: 220 mail.formafast.com ESMTP Postfix
 
@@ -166,104 +228,179 @@ DEBUG: SERVER -> CLIENT: 250-mail.formafast.com
 250-SIZE 10240000
 250-VRFY
 250-ETRN
-250-STARTTLS
+250-AUTH PLAIN LOGIN
 250-ENHANCEDSTATUSCODES
 250-8BITMIME
 250 DSN
 
-DEBUG: CLIENT -> SERVER: STARTTLS
+DEBUG: CLIENT -> SERVER: AUTH LOGIN
 
-DEBUG: SERVER -> CLIENT: 454 4.7.0 TLS not available due to local problem
+DEBUG: SERVER -> CLIENT: 334 VXNlcm5hbWU6
 
-DEBUG: SMTP ERROR: STARTTLS command failed: 454 4.7.0 TLS not available due to local problem
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
 
-DEBUG: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
+DEBUG: CLIENT -> SERVER: [credentials hidden]
+DEBUG: SERVER -> CLIENT: 235 2.7.0 Authentication successful
+
+DEBUG: CLIENT -> SERVER: MAIL FROM:<mail@formafast.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.0 Ok
+
+DEBUG: CLIENT -> SERVER: RCPT TO:<contact@cemactrading.com>
+
+DEBUG: SERVER -> CLIENT: 250 2.1.5 Ok
+
+DEBUG: CLIENT -> SERVER: DATA
+
+DEBUG: SERVER -> CLIENT: 354 End data with <CR><LF>.<CR><LF>
+
+DEBUG: CLIENT -> SERVER: Date: Wed, 3 Dec 2025 20:53:07 +0100
+
+DEBUG: CLIENT -> SERVER: To: contact@cemactrading.com
+
+DEBUG: CLIENT -> SERVER: From: CEMAC Trading <mail@formafast.com>
+
+DEBUG: CLIENT -> SERVER: Reply-To: Ibrahim Goumrane <ibrahimgoumrane01@gmail.com>
+
+DEBUG: CLIENT -> SERVER: Subject: =?UTF-8?Q?=F0=9F=94=94_Nouveau_message_-_CEMAC_Trading:_Message_de_Ibrahim_Goumrane?=
+
+DEBUG: CLIENT -> SERVER: Message-ID: <Suv0nLIg8XF1NWFjYLOitsuSHuYG2GOTwL8MrF90g@localhost>
+
+DEBUG: CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+
+DEBUG: CLIENT -> SERVER: MIME-Version: 1.0
+
+DEBUG: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+DEBUG: CLIENT -> SERVER:  boundary="b1=_Suv0nLIg8XF1NWFjYLOitsuSHuYG2GOTwL8MrF90g"
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_Suv0nLIg8XF1NWFjYLOitsuSHuYG2GOTwL8MrF90g
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: Tm91dmVhdSBtZXNzYWdlIGRlIGNvbnRhY3QgQ0VNQUMgVHJhZGluZwoKTm9tOiBJYnJhaGltIEdv
+
+DEBUG: CLIENT -> SERVER: dW1yYW5lCkVtYWlsOiBpYnJhaGltZ291bXJhbmUwMUBnbWFpbC5jb20KTWVzc2FnZToKSWJyYWhp
+
+DEBUG: CLIENT -> SERVER: bSBHb3VtcmFuZQoKRGF0ZTogMDMvMTIvMjAyNSDDoCAyMDo1MzowNwo=
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_Suv0nLIg8XF1NWFjYLOitsuSHuYG2GOTwL8MrF90g
+
+DEBUG: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+DEBUG: CLIENT -> SERVER: Content-Transfer-Encoding: base64
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: DQogICAgICAgICAgICA8aHRtbD4NCiAgICAgICAgICAgIDxoZWFkPg0KICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: IDx0aXRsZT5Ob3V2ZWF1IENvbnRhY3QgLSBDRU1BQyBUcmFkaW5nPC90aXRsZT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICA8c3R5bGU+DQogICAgICAgICAgICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTog
+
+DEBUG: CLIENT -> SERVER: J1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7IGxpbmUtaGVp
+
+DEBUG: CLIENT -> SERVER: Z2h0OiAxLjY7IGNvbG9yOiAjMzMzOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250YWluZXIg
+
+DEBUG: CLIENT -> SERVER: eyBtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0bzsgYmFja2dyb3VuZDogI2ZmZmZmZjsg
+
+DEBUG: CLIENT -> SERVER: fQ0KICAgICAgICAgICAgICAgICAgICAuaGVhZGVyIHsgYmFja2dyb3VuZDogbGluZWFyLWdyYWRp
+
+DEBUG: CLIENT -> SERVER: ZW50KDEzNWRlZywgIzJjNWFhMCwgIzRhOTBlMik7IGNvbG9yOiB3aGl0ZTsgcGFkZGluZzogMjBw
+
+DEBUG: CLIENT -> SERVER: eDsgdGV4dC1hbGlnbjogY2VudGVyOyB9DQogICAgICAgICAgICAgICAgICAgIC5jb250ZW50IHsg
+
+DEBUG: CLIENT -> SERVER: cGFkZGluZzogMjBweDsgYmFja2dyb3VuZDogI2Y4ZjlmZjsgfQ0KICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAuaW5mby1jYXJkIHsgYmFja2dyb3VuZDogd2hpdGU7IGJvcmRlci1yYWRpdXM6IDhweDsgcGFk
+
+DEBUG: CLIENT -> SERVER: ZGluZzogMjBweDsgbWFyZ2luOiAxNXB4IDA7IGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAs
+
+DEBUG: CLIENT -> SERVER: MCwwLDAuMSk7IH0NCiAgICAgICAgICAgICAgICAgICAgLmxhYmVsIHsgZm9udC13ZWlnaHQ6IGJv
+
+DEBUG: CLIENT -> SERVER: bGQ7IGNvbG9yOiAjMmM1YWEwOyBtYXJnaW4tYm90dG9tOiA1cHg7IH0NCiAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgLnZhbHVlIHsgY29sb3I6ICMzMzM7IG1hcmdpbi1ib3R0b206IDE1cHg7IH0NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgLmZvb3RlciB7IGJhY2tncm91bmQ6ICMyYzNlNTA7IGNvbG9yOiB3aGl0
+
+DEBUG: CLIENT -> SERVER: ZTsgcGFkZGluZzogMjBweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDEycHg7IH0N
+
+DEBUG: CLIENT -> SERVER: CiAgICAgICAgICAgICAgICA8L3N0eWxlPg0KICAgICAgICAgICAgPC9oZWFkPg0KICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgPGJvZHk+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0nY29udGFpbmVyJz4NCiAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naGVhZGVyJz4NCiAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgIDxoMT7wn5OnIE5vdXZlYXUgQ29udGFjdCBDRU1BQyBUcmFkaW5nPC9oMT4NCiAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9J2NvbnRl
+
+DEBUG: CLIENT -> SERVER: bnQnPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0naW5mby1jYXJkJz4NCiAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdsYWJlbCc+8J+RpCBOb206PC9k
+
+DEBUG: CLIENT -> SERVER: aXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnPklicmFo
+
+DEBUG: CLIENT -> SERVER: aW0gR291bXJhbmU8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNz
+
+DEBUG: CLIENT -> SERVER: PSdsYWJlbCc+8J+TpyBFbWFpbDo8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+
+DEBUG: CLIENT -> SERVER: ZGl2IGNsYXNzPSd2YWx1ZSc+PGEgaHJlZj0nbWFpbHRvOmlicmFoaW1nb3VtcmFuZTAxQGdtYWls
+
+DEBUG: CLIENT -> SERVER: LmNvbSc+aWJyYWhpbWdvdW1yYW5lMDFAZ21haWwuY29tPC9hPjwvZGl2Pg0KICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9J2xhYmVsJz7wn5KsIE1lc3NhZ2U6PC9kaXY+DQog
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ndmFsdWUnIHN0eWxlPSdiYWNr
+
+DEBUG: CLIENT -> SERVER: Z3JvdW5kOiAjZjFmM2Y0OyBwYWRkaW5nOiAxNXB4OyBib3JkZXItcmFkaXVzOiA1cHg7Jz5JYnJh
+
+DEBUG: CLIENT -> SERVER: aGltIEdvdW1yYW5lPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFz
+
+DEBUG: CLIENT -> SERVER: cz0nbGFiZWwnPvCflZIgRGF0ZTo8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+
+DEBUG: CLIENT -> SERVER: ZGl2IGNsYXNzPSd2YWx1ZSc+MDMvMTIvMjAyNSDDoCAyMDo1MzowNzwvZGl2Pg0KICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSdmb290ZXInPg0KICAgICAgICAgICAgICAgICAgICAg
+
+DEBUG: CLIENT -> SERVER: ICAgPHA+PHN0cm9uZz5DRU1BQyBUcmFkaW5nIC0gU3lzdMOobWUgZGUgQ29udGFjdDwvc3Ryb25n
+
+DEBUG: CLIENT -> SERVER: PjwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwPlZpbGxhIE7CsDEyNSBBdmVudWUgUHJp
+
+DEBUG: CLIENT -> SERVER: bmNlIGRlIEdhbGxlIC0gQWt3YSAtIERvdWFsYSAtIENhbWVyb3VuIHwgKzIzNyA2NzggMTIgMTIg
+
+DEBUG: CLIENT -> SERVER: MzI8L3A+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2
+
+DEBUG: CLIENT -> SERVER: Pg0KICAgICAgICAgICAgPC9ib2R5Pg0KICAgICAgICAgICAgPC9odG1sPg==
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: --b1=_Suv0nLIg8XF1NWFjYLOitsuSHuYG2GOTwL8MrF90g--
+
+DEBUG: CLIENT -> SERVER: 
+
+DEBUG: CLIENT -> SERVER: .
+
+DEBUG: SERVER -> CLIENT: 250 2.0.0 Ok: queued as 1511410D1B1
 
 DEBUG: CLIENT -> SERVER: QUIT
 
 DEBUG: SERVER -> CLIENT: 221 2.0.0 Bye
 
 DEBUG: Connection: closed
-DEBUG: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
-
-EXCEPTION: SMTP Error: Could not connect to SMTP host. STARTTLS command failed TLS not available due to local problem
-
-File: C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php
-Line: 2252
-Stack trace:
-#0 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(2062): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1689): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 3 De...', '--b1=_UNX33e6gM...')
-#2 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1523): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(351): PHPMailer\PHPMailer\PHPMailer->send()
-#4 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(204): HomeController->sendEmailSMTP('Ibrahim Goumran...', 'ibrahimgoumrane...', 'Ibrahim Goumran...')
-#5 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(151): HomeController->processContactForm()
-#6 C:\xampp\htdocs\cemactrading\index.php(82): HomeController->apiContact()
-#7 {main}
-============================================================
-
-============================================================
-CONTACT FORM EMAIL ATTEMPT
-Time: 2025-12-03 18:34:04
-Name: Ibrahim Goumrane
-Email: ibrahimgoumrane01@gmail.com
-Message length: 16 chars
-------------------------------------------------------------
-Configuration loaded successfully
-Host: mail.formafast.com
-Port: 587
-Username: mail@formafast.com
-From set: mail@formafast.com
-To set: contact@cemactrading.com
-Reply-To set: ibrahimgoumrane01@gmail.com
-Email content prepared, attempting to send...
-DEBUG: Connection: opening to mail.formafast.com:587, timeout=300, options=array()
-DEBUG: Connection: opened
-DEBUG: SERVER -> CLIENT: 220 mail.formafast.com ESMTP Postfix
-
-DEBUG: CLIENT -> SERVER: EHLO localhost
-
-DEBUG: SERVER -> CLIENT: 250-mail.formafast.com
-250-PIPELINING
-250-SIZE 10240000
-250-VRFY
-250-ETRN
-250-STARTTLS
-250-ENHANCEDSTATUSCODES
-250-8BITMIME
-250 DSN
-
-DEBUG: CLIENT -> SERVER: STARTTLS
-
-DEBUG: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
-
-DEBUG: Connection failed. Error #2: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
-error:0A000086:SSL routines::certificate verify failed [C:\xampp\htdocs\cemactrading\vendor\SMTP.php line 487]
-DEBUG: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
-error:0A000086:SSL routines::certificate verify failed
-DEBUG: CLIENT -> SERVER: QUIT
-
-DEBUG: SERVER -> CLIENT: M I A"L=²¯.¢Ğâw•SMêqü·/\î2°L®Ì«oµşÂ‚Ä7]U‚ÉIª“ğüsâşe.ÒZv@&m_™ («™ö(­À*c=ö3´ô(¥äb¶
-Ÿö²zó½5èÓî#8d»*´¥L¬¨–¡´A&£DZ7PCı‹:¾¿6ïb2+ñ]ùÎºIö´¶^2²$¤¨¿n-F=e·J]¾ÈĞ4tcÅ]I=…¤XrÇÆÂ0+Ÿ§Š5r1—A,C»P€.c¤Ÿ]T~î—xÂõè[e!Ø»è`—M¬\’D¬ÁñÚ±(Hƒ‹ŸŸVÇr<Ó./ş0¹y½ò"ÌˆF<ò9dÛßBs¢èm`Y¼|¶=´ød»T
-ãyh
-
-DEBUG: SMTP ERROR: QUIT command failed: M I A"L=²¯.¢Ğâw•SMêqü·/\î2°L®Ì«oµşÂ‚Ä7]U‚ÉIª“ğüsâşe.ÒZv@&m_™ («™ö(­À*c=ö3´ô(¥äb¶
-Ÿö²zó½5èÓî#8d»*´¥L¬¨–¡´A&£DZ7PCı‹:¾¿6ïb2+ñ]ùÎºIö´¶^2²$¤¨¿n-F=e·J]¾ÈĞ4tcÅ]I=…¤XrÇÆÂ0+Ÿ§Š5r1—A,C»P€.c¤Ÿ]T~î—xÂõè[e!Ø»è`—M¬\’D¬ÁñÚ±(Hƒ‹ŸŸVÇr<Ó./ş0¹y½ò"ÌˆF<ò9dÛßBs¢èm`Y¼|¶=´ød»T
-ãyh
-
-DEBUG: Connection: closed
-DEBUG: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
-error:0A000086:SSL routines::certificate verify failed
-EXCEPTION: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
-error:0A000086:SSL routines::certificate verify failed
-File: C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php
-Line: 2252
-Stack trace:
-#0 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(2062): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1689): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 3 De...', '--b1=_ltCAh1dpy...')
-#2 C:\xampp\htdocs\cemactrading\vendor\PHPMailer.php(1523): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(351): PHPMailer\PHPMailer\PHPMailer->send()
-#4 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(204): HomeController->sendEmailSMTP('Ibrahim Goumran...', 'ibrahimgoumrane...', 'Ibrahim Goumran...')
-#5 C:\xampp\htdocs\cemactrading\app\Controllers\HomeController.php(151): HomeController->processContactForm()
-#6 C:\xampp\htdocs\cemactrading\index.php(82): HomeController->apiContact()
-#7 {main}
+Send result: SUCCESS
 ============================================================

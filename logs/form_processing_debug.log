@@ -1,7 +1,7 @@
 
 ============================================================
 FORM PROCESSING ATTEMPT
-Time: 2025-12-03 17:51:52
+Time: 2025-12-03 20:47:36
 POST data received: Array
 (
     [name] => Ibrahim Goumrane
@@ -15,10 +15,13 @@ Name: 'Ibrahim Goumrane'
 Email: 'ibrahimgoumrane01@gmail.com'
 Message: 'Ibrahim Goumrane'
 Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
 
 ============================================================
 FORM PROCESSING ATTEMPT
-Time: 2025-12-03 17:56:49
+Time: 2025-12-03 20:53:07
 POST data received: Array
 (
     [name] => Ibrahim Goumrane
@@ -32,117 +35,6 @@ Name: 'Ibrahim Goumrane'
 Email: 'ibrahimgoumrane01@gmail.com'
 Message: 'Ibrahim Goumrane'
 Validation passed, attempting to send email...
-Admin email result: FAILED
-Confirmation email result: FAILED
-Both emails failed
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 17:58:23
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 18:02:14
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 18:15:55
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 18:18:17
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-Admin email result: FAILED
-Confirmation email result: FAILED
-Both emails failed
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 18:18:23
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-Admin email result: FAILED
-Confirmation email result: FAILED
-Both emails failed
-
-============================================================
-FORM PROCESSING ATTEMPT
-Time: 2025-12-03 18:34:04
-POST data received: Array
-(
-    [name] => Ibrahim Goumrane
-    [email] => ibrahimgoumrane01@gmail.com
-    [message] => Ibrahim Goumrane
-)
-
-------------------------------------------------------------
-Processed values:
-Name: 'Ibrahim Goumrane'
-Email: 'ibrahimgoumrane01@gmail.com'
-Message: 'Ibrahim Goumrane'
-Validation passed, attempting to send email...
-Admin email result: FAILED
-Confirmation email result: FAILED
-Both emails failed
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
