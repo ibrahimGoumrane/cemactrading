@@ -71,7 +71,7 @@
 
     <!-- Scripts -->
     <script>
-        const BASE_PATH = '<?= Config::BASE_PATH ?>';
+        const BASE_PATH = '<?= Config::APP_URL . Config::BASE_PATH ?>';
     </script>
     <script src="<?= asset('js/app.js') ?>"></script>
     

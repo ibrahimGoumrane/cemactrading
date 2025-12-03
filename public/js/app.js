@@ -144,7 +144,7 @@ function initContactForm() {
     try {
       const formData = new FormData(form);
 
-      const response = await fetch(`${BASE_PATH}/api/contact`, {
+      const response = await fetch(`${BASE_PATH}api/contact`, {
         method: "POST",
         body: formData,
       });

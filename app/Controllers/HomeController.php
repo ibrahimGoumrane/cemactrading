@@ -104,7 +104,7 @@ class HomeController
     public function submitContact()
     {
         // Create debug log for routing
-        $logDir = $_SERVER['DOCUMENT_ROOT'] . '/new/logs';
+        $logDir = BASE_PATH . '/logs';
         if (!is_dir($logDir)) {
             mkdir($logDir, 0755, true);
         }
@@ -158,7 +158,7 @@ class HomeController
     private function processContactForm()
     {
         // Create debug log for form processing
-        $logDir = $_SERVER['DOCUMENT_ROOT'] . '/new/logs';
+        $logDir = BASE_PATH . '/logs';
         if (!is_dir($logDir)) {
             mkdir($logDir, 0755, true);
         }
@@ -243,7 +243,7 @@ class HomeController
     private function sendEmailSMTP($name, $email, $message)
     {
         // Create detailed log file for debugging
-        $logDir = $_SERVER['DOCUMENT_ROOT'] . '/new/logs';
+        $logDir = BASE_PATH . '/logs';
         if (!is_dir($logDir)) {
             mkdir($logDir, 0755, true);
         }
@@ -262,7 +262,7 @@ class HomeController
         try {
             $mail = new PHPMailer(true);
 
-            // Server settings - exactly matching the working test
+            // Server settings
             $mail->isSMTP();
             $mail->Host       = Config::SMTP_HOST;
             $mail->SMTPAuth   = true;

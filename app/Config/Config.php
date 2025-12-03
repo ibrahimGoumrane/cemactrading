@@ -7,8 +7,8 @@ class Config
 {
     // Application settings
     const APP_NAME = 'CEMAC Trading';
-    const APP_URL = 'http://cemactrading.com';
-    const BASE_PATH = '/';
+    const APP_URL = 'http://localhost/cemactrading/';
+    const BASE_PATH = '';
     const DEFAULT_LANGUAGE = 'en';
     
     // Supported languages
@@ -26,15 +26,14 @@ class Config
     
     // Contact settings
     const CONTACT_EMAIL = 'contact@cemactrading.com';
-    // const ADMIN_EMAILS = ['adel.boughanmi@gmail.com', 'romdane@gmail.com' , 'mizoxrizox@gmail.com'];
-    const ADMIN_EMAILS = [ 'mizoxrizox@gmail.com'];
+    const ADMIN_EMAILS = ['contact@cemactrading.com'];
     
-    // SMTP Email Configuration (Working Gmail Setup)
-    const SMTP_HOST = 'smtp.gmail.com';
+    // SMTP Email Configuration (Formafast with TLS)
+    const SMTP_HOST = 'mail.formafast.com';
     const SMTP_PORT = 587;
-    const SMTP_USERNAME = 'mizoxrizox@gmail.com';
-    const SMTP_PASSWORD = 'dlop eiuz bcxn etaf';
-    const SMTP_FROM_EMAIL = 'mizoxrizox@gmail.com';
+    const SMTP_USERNAME = 'mail@formafast.com';
+    const SMTP_PASSWORD = 'Mail.Formafast.216';
+    const SMTP_FROM_EMAIL = 'mail@formafast.com';
     const SMTP_FROM_NAME = 'CEMAC Trading';
     
     // SEO settings
