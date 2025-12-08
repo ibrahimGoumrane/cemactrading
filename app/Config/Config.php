@@ -7,7 +7,7 @@ class Config
 {
     // Application settings
     const APP_NAME = 'CEMAC Trading';
-    const APP_URL = 'https://www.cemactrading.com';
+    const APP_URL = 'https://cemactrading.com/';
     const BASE_PATH = '';
     const DEFAULT_LANGUAGE = 'en';
     
