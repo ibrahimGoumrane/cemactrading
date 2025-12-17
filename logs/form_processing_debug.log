@@ -138,3 +138,83 @@ Validation passed, attempting to send email...
 Admin email result: SUCCESS
 Confirmation email result: SUCCESS
 Both emails sent successfully
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-16 17:23:07
+POST data received: Array
+(
+    [name] => ibrahimgoumrane01@gmail.com
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => ibrahimgoumrane01@gmail.com
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'ibrahimgoumrane01@gmail.com'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'ibrahimgoumrane01@gmail.com'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-16 17:24:00
+POST data received: Array
+(
+    [name] => Ibrahim Goumrane
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Ibrahim Goumrane
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Ibrahim Goumrane'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Ibrahim Goumrane'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-17 12:09:48
+POST data received: Array
+(
+    [name] => Ibrahim Goumrane
+    [email] => goumrane.ibrahim@ensam-casa.ma
+    [message] => Ibrahim Goumrane
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Ibrahim Goumrane'
+Email: 'goumrane.ibrahim@ensam-casa.ma'
+Message: 'Ibrahim Goumrane'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully
+
+============================================================
+FORM PROCESSING ATTEMPT
+Time: 2025-12-17 12:49:07
+POST data received: Array
+(
+    [name] => Ibrahim Goumrane
+    [email] => ibrahimgoumrane01@gmail.com
+    [message] => Ibrahim Goumrane
+)
+
+------------------------------------------------------------
+Processed values:
+Name: 'Ibrahim Goumrane'
+Email: 'ibrahimgoumrane01@gmail.com'
+Message: 'Ibrahim Goumrane'
+Validation passed, attempting to send email...
+Admin email result: SUCCESS
+Confirmation email result: SUCCESS
+Both emails sent successfully

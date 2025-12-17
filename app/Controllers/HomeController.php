@@ -283,9 +283,9 @@ class HomeController
             file_put_contents($logFile, "Port: " . Config::SMTP_PORT . "\n", FILE_APPEND | LOCK_EX);
             file_put_contents($logFile, "Username: " . Config::SMTP_USERNAME . "\n", FILE_APPEND | LOCK_EX);
 
-            // Recipients - exactly matching the test
-            $mail->setFrom(Config::SMTP_FROM_EMAIL, Config::SMTP_FROM_NAME);
-            file_put_contents($logFile, "From set: " . Config::SMTP_FROM_EMAIL . "\n", FILE_APPEND | LOCK_EX);
+            // Recipients - set client email as From for direct replies
+            $mail->setFrom($email, $name);
+            file_put_contents($logFile, "From set: $email\n", FILE_APPEND | LOCK_EX);
             
             $mail->addAddress(Config::ADMIN_EMAILS[0]); // Use first admin email like test
             file_put_contents($logFile, "To set: " . Config::ADMIN_EMAILS[0] . "\n", FILE_APPEND | LOCK_EX);
