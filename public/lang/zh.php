@@ -54,6 +54,8 @@ return [
     'contact_success' => '您的消息已成功发送！',
     'contact_error' => '发送消息时出现错误。请重试。',
     'invalid_email' => '无效的邮箱地址。请重试。',
+    'recaptcha_required' => '请完成reCAPTCHA验证。',
+    'recaptcha_failed' => 'reCAPTCHA验证失败。请重试。',
     
     // Footer
     'address' => '地址',

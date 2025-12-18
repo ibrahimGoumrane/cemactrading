@@ -40,6 +40,10 @@ class Config
     const META_DESCRIPTION = 'CEMAC Trading - Import & Export Specialists based in Douala, Cameroon. High-quality food products, supply chain management, and customs assistance.';
     const META_KEYWORDS = 'CEMAC Trading, import, export, food products, Douala, Cameroon, supply chain, customs, agriculture';
     
+    // reCAPTCHA Configuration
+    const RECAPTCHA_SITE_KEY = '6Ld3xy8sAAAAAIAkpEKfulZMf0VpACJxbCtmB16L';
+    const RECAPTCHA_SECRET_KEY = '6Ld3xy8sAAAAALJ_eY1mmxL7yRkfOguZpgh46PSV';
+    
     // Social media
     const SOCIAL_LINKS = [
         'whatsapp' => 'https://wa.me/237678121232',

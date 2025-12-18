@@ -17,6 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
+ * reCAPTCHA callback function
+ * This function is called when reCAPTCHA is completed
+ */
+function recaptchaCallback() {
+  const recaptchaError = document.getElementById("recaptcha-error");
+  if (recaptchaError) {
+    recaptchaError.style.display = "none";
+  }
+}
+
+/**
  * Smooth Scrolling for Anchor Links
  */
 function initSmoothScrolling() {
@@ -109,6 +120,17 @@ function initContactForm() {
         isFormValid = false;
       }
     });
+
+    // Check reCAPTCHA
+    const recaptchaResponse = grecaptcha.getResponse();
+    const recaptchaError = document.getElementById("recaptcha-error");
+    
+    if (!recaptchaResponse) {
+      recaptchaError.style.display = "block";
+      isFormValid = false;
+    } else {
+      recaptchaError.style.display = "none";
+    }
 
     return isFormValid;
   }

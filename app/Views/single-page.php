@@ -284,6 +284,16 @@
                                       placeholder="Décrivez votre demande..."></textarea>
                         </div>
                         
+                        <!-- reCAPTCHA -->
+                        <div class="form-group recaptcha-container">
+                            <div class="g-recaptcha" 
+                                 data-sitekey="<?= Config::RECAPTCHA_SITE_KEY ?>"
+                                 data-callback="recaptchaCallback"></div>
+                            <div id="recaptcha-error" class="error-message" style="display: none;">
+                                <?= __('recaptcha_required') ?>
+                            </div>
+                        </div>
+                        
                         <button type="submit" class="btn btn-primary btn-submit">
                             <i class="fas fa-paper-plane"></i> <?= __('form_send') ?>
                         </button>

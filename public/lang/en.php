@@ -54,6 +54,8 @@ return [
     'contact_success' => 'Your message has been sent successfully!',
     'contact_error' => 'An error occurred while sending your message. Please try again.',
     'invalid_email' => 'Invalid email address. Please try again.',
+    'recaptcha_required' => 'Please complete the reCAPTCHA verification.',
+    'recaptcha_failed' => 'reCAPTCHA verification failed. Please try again.',
     
     // Footer
     'address' => 'Address',

@@ -73,6 +73,7 @@
     <script>
         const BASE_PATH = '<?= Config::APP_URL . Config::BASE_PATH ?>';
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="<?= asset('js/app.js') ?>"></script>
     
     <!-- Google Analytics (Optional) -->

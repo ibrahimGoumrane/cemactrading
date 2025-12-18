@@ -53,8 +53,8 @@ return [
     
     'contact_success' => 'Votre message a été envoyé avec succès !',
     'contact_error' => 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer.',
-    'invalid_email' => 'Adresse email invalide. Veuillez réessayer.',
-    
+    'invalid_email' => 'Adresse email invalide. Veuillez réessayer.',    'recaptcha_required' => 'Veuillez compléter la vérification reCAPTCHA.',
+    'recaptcha_failed' => 'Échec de la vérification reCAPTCHA. Veuillez réessayer.',    
     // Footer
     'address' => 'Adresse',
     'phone' => 'Téléphone',

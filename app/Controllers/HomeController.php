@@ -197,7 +197,25 @@ class HomeController
             ];
         }
         
-        file_put_contents($logFile, "Validation passed, attempting to send email...\n", FILE_APPEND | LOCK_EX);
+        // Verify reCAPTCHA
+        $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+        if (empty($recaptchaResponse)) {
+            file_put_contents($logFile, "VALIDATION FAILED: reCAPTCHA not completed\n", FILE_APPEND | LOCK_EX);
+            return [
+                'success' => false,
+                'message' => __('recaptcha_required')
+            ];
+        }
+        
+        if (!$this->verifyRecaptcha($recaptchaResponse)) {
+            file_put_contents($logFile, "VALIDATION FAILED: reCAPTCHA verification failed\n", FILE_APPEND | LOCK_EX);
+            return [
+                'success' => false,
+                'message' => __('recaptcha_failed')
+            ];
+        }
+        
+        file_put_contents($logFile, "Validation passed (including reCAPTCHA), attempting to send email...\n", FILE_APPEND | LOCK_EX);
         
         // Send email using working Gmail SMTP method
         try {
@@ -557,5 +575,36 @@ private function sendConfirmationEmail($name, $email)
         
         // Include the layout
         include VIEWS_PATH . '/layout.php';
+    }
+    
+    /**
+     * Verify reCAPTCHA response
+     */
+    private function verifyRecaptcha($recaptchaResponse)
+    {
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = [
+            'secret' => Config::RECAPTCHA_SECRET_KEY,
+            'response' => $recaptchaResponse,
+            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+        ];
+        
+        $options = [
+            'http' => [
+                'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
+                'method' => 'POST',
+                'content' => http_build_query($data)
+            ]
+        ];
+        
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        
+        if ($result === false) {
+            return false;
+        }
+        
+        $resultJson = json_decode($result, true);
+        return isset($resultJson['success']) && $resultJson['success'] === true;
     }
 }
