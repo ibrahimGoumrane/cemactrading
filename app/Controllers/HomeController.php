@@ -250,12 +250,12 @@ class HomeController
         $logFile = $logDir . '/contact_form_debug.log';
         
         // Log the attempt
-        $logEntry = "\n" . str_repeat("=", 60) . "\n";
-        $logEntry .= "CONTACT FORM EMAIL ATTEMPT\n";
-        $logEntry .= "Time: " . date('Y-m-d H:i:s') . "\n";
-        $logEntry .= "Name: $name\n";
-        $logEntry .= "Email: $email\n";
-        $logEntry .= "Message length: " . strlen($message) . " chars\n";
+        $logEntry  = "\n" . str_repeat("=", 60) . "\n";
+        $logEntry .= "CONTACT FORM EMAIL ATTEMPT | "
+                . "Time=" . date('Y-m-d H:i:s')
+                . " | Name=$name"
+                . " | Email=$email"
+                . " | MsgLen=" . strlen($message) . " chars\n";
         $logEntry .= str_repeat("-", 60) . "\n";
         file_put_contents($logFile, $logEntry, FILE_APPEND | LOCK_EX);
 
@@ -277,21 +277,24 @@ class HomeController
             $mail->Debugoutput = function($str, $level) use ($logFile) {
                 file_put_contents($logFile, "DEBUG: " . $str . "\n", FILE_APPEND | LOCK_EX);
             };
-
-            file_put_contents($logFile, "Configuration loaded successfully\n", FILE_APPEND | LOCK_EX);
-            file_put_contents($logFile, "Host: " . Config::SMTP_HOST . "\n", FILE_APPEND | LOCK_EX);
-            file_put_contents($logFile, "Port: " . Config::SMTP_PORT . "\n", FILE_APPEND | LOCK_EX);
-            file_put_contents($logFile, "Username: " . Config::SMTP_USERNAME . "\n", FILE_APPEND | LOCK_EX);
-
+            file_put_contents(
+                $logFile,
+                "Config loaded | Host=" . Config::SMTP_HOST .
+                " | Port=" . Config::SMTP_PORT .
+                " | User=" . Config::SMTP_USERNAME . "\n",
+                FILE_APPEND | LOCK_EX
+            );
             // Recipients - set client email as From for direct replies
             $mail->setFrom($email, $name);
-            file_put_contents($logFile, "From set: $email\n", FILE_APPEND | LOCK_EX);
             
             $mail->addAddress(Config::ADMIN_EMAILS[0]); // Use first admin email like test
-            file_put_contents($logFile, "To set: " . Config::ADMIN_EMAILS[0] . "\n", FILE_APPEND | LOCK_EX);
             
             $mail->addReplyTo($email, $name);
-            file_put_contents($logFile, "Reply-To set: $email\n", FILE_APPEND | LOCK_EX);
+            file_put_contents(
+                $logFile,
+                "Recipients | From=$email | To=" . Config::ADMIN_EMAILS[0] . " | Reply-To=$email\n",
+                FILE_APPEND | LOCK_EX
+            );
 
             // Content
             $mail->isHTML(true);
@@ -346,14 +349,11 @@ class HomeController
             $mail->AltBody .= "Email: $email\n";
             $mail->AltBody .= "Message:\n$message\n\n";
             $mail->AltBody .= "Date: " . date('d/m/Y à H:i:s') . "\n";
+            $result = $mail->send();
 
             file_put_contents($logFile, "Email content prepared, attempting to send...\n", FILE_APPEND | LOCK_EX);
-            
-            $result = $mail->send();
-            
             file_put_contents($logFile, "Send result: " . ($result ? "SUCCESS" : "FAILED") . "\n", FILE_APPEND | LOCK_EX);
-            file_put_contents($logFile, str_repeat("=", 60) . "\n", FILE_APPEND | LOCK_EX);
-            
+
             return $result;
             
         } catch (Exception $e) {
@@ -372,91 +372,135 @@ class HomeController
     /**
      * Send confirmation email to the person who submitted the form
      */
-    private function sendConfirmationEmail($name, $email)
-    {
-        try {
-            $mail = new PHPMailer(true);
+private function sendConfirmationEmail($name, $email)
+{
+    $logDir = BASE_PATH . '/logs';
+    if (!is_dir($logDir)) {
+        mkdir($logDir, 0755, true);
+    }
+    $logFile = $logDir . '/confirmation_email.log';
 
-            // Server settings - same as admin email
-            $mail->isSMTP();
-            $mail->Host       = Config::SMTP_HOST;
-            $mail->SMTPAuth   = true;
-            $mail->Username   = Config::SMTP_USERNAME;
-            $mail->Password   = Config::SMTP_PASSWORD;
-            $mail->SMTPSecure = false;         // Disable explicit TLS
-            $mail->SMTPAutoTLS = false;        // Disable automatic TLS attempt
-            $mail->Port       = Config::SMTP_PORT;
+    file_put_contents(
+        $logFile,
+        "\n" . str_repeat("=", 60) . "\n" .
+        "CONFIRMATION EMAIL ATTEMPT | Time=" . date('Y-m-d H:i:s') .
+        " | Name=$name | Email=$email\n",
+        FILE_APPEND | LOCK_EX
+    );
 
-            // Recipients for confirmation
-            $mail->setFrom(Config::SMTP_FROM_EMAIL, Config::SMTP_FROM_NAME);
-            $mail->addAddress($email, $name); // Send to the person who submitted
-            $mail->addReplyTo(Config::ADMIN_EMAILS[0], 'CEMAC Trading');
+    try {
+        $mail = new PHPMailer(true);
 
-            // Content
-            $mail->isHTML(true);
-            $mail->CharSet = 'UTF-8';
-            $mail->Encoding = 'base64';
-            $mail->Subject = "✅ Confirmation de réception - CEMAC Trading";
-            
-            // HTML email body for confirmation
-            $mail->Body = "
-            <html>
-            <head>
-                <title>Confirmation de réception - CEMAC Trading</title>
-                <style>
-                    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-                    .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
-                    .header { background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; padding: 20px; text-align: center; }
-                    .content { padding: 20px; background: #f8f9ff; }
-                    .info-card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-                    .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 12px; }
-                    .highlight { color: #27ae60; font-weight: bold; }
-                </style>
-            </head>
-            <body>
-                <div class='container'>
-                    <div class='header'>
-                        <h1>✅ Message bien reçu !</h1>
-                    </div>
-                    <div class='content'>
-                        <div class='info-card'>
-                            <p>Bonjour <strong>" . htmlspecialchars($name) . "</strong>,</p>
-                            
-                            <p>Nous vous confirmons la bonne réception de votre message envoyé le <span class='highlight'>" . date('d/m/Y à H:i') . "</span>.</p>
-                            
-                            <p>Notre équipe examinera votre demande et vous contactera dans les <strong>24 heures ouvrables</strong>.</p>
-                            
-                            <div style='background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 20px 0;'>
-                                <h3 style='margin-top: 0; color: #27ae60;'>📞 Besoin d'une réponse rapide ?</h3>
-                                <p style='margin-bottom: 0;'>Contactez-nous directement au <strong>+237 678 12 12 32</strong> ou via WhatsApp.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='footer'>
-                        <p><strong>CEMAC Trading - Votre partenaire commercial</strong></p>
-                        <p>Villa N°125 Avenue Prince de Galle - Akwa - Douala - Cameroun</p>
-                        <p>📞 +237 678 12 12 32 | 📧 contact@cemactrading.com</p>
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host       = Config::SMTP_HOST;
+        $mail->SMTPAuth   = true;
+        $mail->Username   = Config::SMTP_USERNAME;
+        $mail->Password   = Config::SMTP_PASSWORD;
+        $mail->SMTPSecure = false;
+        $mail->SMTPAutoTLS = false;
+        $mail->Port       = Config::SMTP_PORT;
+
+        file_put_contents(
+            $logFile,
+            "SMTP | Host=" . Config::SMTP_HOST .
+            " | Port=" . Config::SMTP_PORT .
+            " | User=" . Config::SMTP_USERNAME . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        // Recipients
+        $mail->setFrom(Config::SMTP_FROM_EMAIL, Config::SMTP_FROM_NAME);
+        $mail->addAddress($email, $name);
+        $mail->addReplyTo(Config::ADMIN_EMAILS[0], 'CEMAC Trading');
+
+        file_put_contents(
+            $logFile,
+            "Recipients | From=" . Config::SMTP_FROM_EMAIL .
+            " | To=$email | Reply-To=" . Config::ADMIN_EMAILS[0] . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        // Content
+        $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
+        $mail->Subject = "✅ Confirmation de réception - CEMAC Trading";
+
+        $mail->Body = "
+        <html>
+        <head>
+            <title>Confirmation de réception - CEMAC Trading</title>
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+                .container { max-width: 600px; margin: 0 auto; background: #ffffff; }
+                .header { background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; padding: 20px; text-align: center; }
+                .content { padding: 20px; background: #f8f9ff; }
+                .info-card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                .footer { background: #2c3e50; color: white; padding: 20px; text-align: center; font-size: 12px; }
+                .highlight { color: #27ae60; font-weight: bold; }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <div class='header'>
+                    <h1>✅ Message bien reçu !</h1>
+                </div>
+                <div class='content'>
+                    <div class='info-card'>
+                        <p>Bonjour <strong>" . htmlspecialchars($name) . "</strong>,</p>
+                        <p>Nous vous confirmons la bonne réception de votre message envoyé le <span class='highlight'>" . date('d/m/Y à H:i') . "</span>.</p>
+                        <p>Notre équipe examinera votre demande et vous contactera dans les <strong>24 heures ouvrables</strong>.</p>
                     </div>
                 </div>
-            </body>
-            </html>";
-            
-            // Alt body for confirmation
-            $mail->AltBody = "Bonjour $name,\n\n";
-            $mail->AltBody .= "Nous vous confirmons la bonne réception de votre message.\n";
-            $mail->AltBody .= "Notre équipe vous contactera dans les 24 heures ouvrables.\n\n";
-            $mail->AltBody .= "Pour une réponse rapide: +237 678 12 12 32\n\n";
-            $mail->AltBody .= "CEMAC Trading\n";
-            $mail->AltBody .= "Villa N°125 Avenue Prince de Galle - Akwa - Douala - Cameroun\n";
+                <div class='footer'>
+                    <p><strong>CEMAC Trading</strong></p>
+                </div>
+            </div>
+        </body>
+        </html>";
 
-            return $mail->send();
-            
-        } catch (Exception $e) {
-            error_log('Confirmation email error: ' . $e->getMessage());
-            return false;
-        }
+        $mail->AltBody =
+            "Bonjour $name\n" .
+            "Confirmation de réception de votre message\n" .
+            "CEMAC Trading\n";
+
+        file_put_contents(
+            $logFile,
+            "EMAIL BODY (HTML): " . str_replace(["\n", "\r"], '', $mail->Body) . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        file_put_contents(
+            $logFile,
+            "EMAIL BODY (ALT): " . str_replace(["\n", "\r"], ' ', $mail->AltBody) . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        $result = $mail->send();
+
+        file_put_contents(
+            $logFile,
+            "Send result: " . ($result ? "SUCCESS" : "FAILED") . "\n" .
+            str_repeat("=", 60) . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        return $result;
+
+    } catch (Exception $e) {
+
+        file_put_contents(
+            $logFile,
+            "ERROR | " . $e->getMessage() . "\n" .
+            str_repeat("=", 60) . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+
+        error_log('Confirmation email error: ' . $e->getMessage());
+        return false;
     }
-    
+}
     /**
      * 404 Not Found page
      */
